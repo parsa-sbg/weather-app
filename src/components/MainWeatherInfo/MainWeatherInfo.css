@@ -1,0 +1,24 @@
+.MainWeatherInfo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.MainWeatherInfo__temp{
+    font-size: 10rem;
+}
+.MainWeatherInfo__detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.MainWeatherInfo__city-name{
+    width: 100%;
+    font-size: 6rem;
+}
+.MainWeatherInfo__date{
+
+}
+.MainWeatherInfo__icon{
+    font-size: 6rem;
+}

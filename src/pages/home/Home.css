@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 6.71rem);
+    align-items: end;
+}
+
+.MainWeatherInfo{
+    padding: 10rem 0 ;
+}
+
+.MoreWeatherInfo{
+    height: 100%;
+}

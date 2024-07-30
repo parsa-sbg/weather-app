@@ -1,0 +1,19 @@
+.MoreWeatherInfoItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+.MoreWeatherInfoItem__name{
+}
+.MoreWeatherInfoItem__right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.MoreWeatherInfoItem__value{
+
+}
+.MoreWeatherInfoItem__icon{
+
+}
