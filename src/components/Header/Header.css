@@ -4,3 +4,33 @@ header {
     justify-content: space-between;
     padding: 1rem 0rem;
 }
+
+/* start header left */
+
+.header__left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header__logo{
+
+}
+.header__links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header__link{
+
+}
+
+/* end header left */
+
+
+
+
+/* start header right */
+
+
+
+/* end header right */
