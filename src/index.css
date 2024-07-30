@@ -1,2 +1,16 @@
 @import url(./assests/css/reset.css);
 @import url(./assests/css/variables.css);
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
