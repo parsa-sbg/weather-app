@@ -17,5 +17,6 @@
     .home{
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 }

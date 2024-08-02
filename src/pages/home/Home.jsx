@@ -9,9 +9,7 @@ export default function Home() {
 
   const {weatherData} = useWeather()  
 
-  const changeKelvinToCdegree = kelvin => Math.floor(kelvin - 272.15)
-  console.log(weatherData);
-  
+  const changeKelvinToCdegree = kelvin => Math.floor(kelvin - 272.15)  
 
   const mainWeatherInfo = {
     cityName: weatherData?.name,
@@ -23,8 +21,8 @@ export default function Home() {
     maxTemp: changeKelvinToCdegree(weatherData?.main.temp_max),
     minTemp: changeKelvinToCdegree(weatherData?.main.temp_min),
     Humidity: weatherData?.main.humidity,
-    Cloudy: weatherData.clouds.all,
-    WindSpeed: weatherData.wind.speed
+    Cloudy: weatherData?.clouds.all,
+    WindSpeed: weatherData?.wind.speed
 
   }
 
