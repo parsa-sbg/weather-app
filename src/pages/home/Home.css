@@ -12,3 +12,10 @@
 .MoreWeatherInfo{
     height: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    .home{
+        flex-direction: column;
+        align-items: center;
+    }
+}

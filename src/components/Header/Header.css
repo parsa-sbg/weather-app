@@ -31,6 +31,32 @@ header {
 
 /* start header right */
 
+.header__right{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header__input{
+    border: none;
+    outline: none;
+    padding: .5rem;
+}
+.header__right-searchbtn{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header__right-searchbtn-icon{
+    size: 50;
+}
 
 
 /* end header right */
