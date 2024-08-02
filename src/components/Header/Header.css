@@ -2,15 +2,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
+    gap: 1rem;
 }
 
 /* start header left */
 
 .header__left{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+    
 }
 .header__logo{
 
@@ -21,7 +20,11 @@ header {
     gap: 2rem;
 }
 .header__link{
-
+    font-size: 2rem;
+    text-wrap: nowrap;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 /* end header left */
@@ -39,7 +42,11 @@ header {
 .header__input{
     border: none;
     outline: none;
-    padding: .5rem;
+    padding: 1rem .5rem;
+    font-size: 2rem;
+    padding-right: 3.5rem;
+    border-radius: 1.5rem .4rem;
+    width: 100%;
 }
 .header__right-searchbtn{
     padding: 0;
@@ -56,7 +63,22 @@ header {
 
 .header__right-searchbtn-icon{
     size: 50;
+    border-left: 1px solid black;
 }
 
 
 /* end header right */
+
+
+/* responsive */
+@media only screen and (max-width: 500px) {
+    .header__logo{
+        width: 5rem;
+    }
+    .header__links{
+        gap: 1rem;
+    }
+    .MuiContainer-root{
+        padding: 0 8px !important;
+    }
+}
