@@ -1,24 +1,64 @@
-.MainWeatherInfo{
+.MainWeatherInfo {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.MainWeatherInfo__temp{
+
+.MainWeatherInfo__temp {
     font-size: 10rem;
 }
-.MainWeatherInfo__detail{
+
+.MainWeatherInfo__detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-wrap: nowrap;
 }
-.MainWeatherInfo__city-name{
+
+.MainWeatherInfo__city-name {
     width: 100%;
     font-size: 6rem;
 }
-.MainWeatherInfo__date{
 
+.MainWeatherInfo__date {
+    font-size: 2rem;
 }
-.MainWeatherInfo__icon{
+
+.MainWeatherInfo__icon {
     font-size: 6rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .MainWeatherInfo__temp {
+        font-size: 8rem;
+    }
+
+    .MainWeatherInfo__city-name {
+        font-size: 5rem;
+    }
+
+    .MainWeatherInfo__icon {
+        font-size: 5rem;
+    }
+    .MainWeatherInfo{
+        height: 34%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .MainWeatherInfo__temp {
+        font-size: 5rem;
+    }
+
+    .MainWeatherInfo__city-name {
+        font-size: 4rem;
+    }
+
+    .MainWeatherInfo__icon {
+        font-size: 4rem;
+    }
+    .MainWeatherInfo__date {
+        font-size: 1.8rem;
+    }
 }

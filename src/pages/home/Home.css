@@ -2,22 +2,15 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: calc(100vh - 6.71rem);
-    align-items: end;
+    height: 100vh;
+    padding-top: 8.3rem;
 }
 
-.MainWeatherInfo{
-    padding: 10rem 0 ;
-}
-
-.MoreWeatherInfo{
-    height: 100%;
-}
 
 @media only screen and (max-width: 800px) {
     .home{
         flex-direction: column;
         align-items: center;
-        height: auto;
+        justify-content: center;
     }
 }

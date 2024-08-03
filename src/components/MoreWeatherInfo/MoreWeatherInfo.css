@@ -1,18 +1,42 @@
-.MoreWeatherInfo{
+.MoreWeatherInfo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.MoreWeatherInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2.5rem;
     font-size: 2.5rem;
+    width: 100%;
+    max-width: 35rem;
 }
-.MoreWeatherInfo__title{
 
-}
-.MoreWeatherInfo__subtitle{
+.MoreWeatherInfo__title {}
 
-}
-.MoreWeatherInfo__body{
+.MoreWeatherInfo__subtitle {}
+
+.MoreWeatherInfo__body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
+@media only screen and (max-width: 800px) {
+    .MoreWeatherInfo-wrapper {
+        width: 108%;
+        margin: 0 -8px;
+        background-color: bisque;
+        justify-content: center;
+        height: 66%;
+    }
+
+    .MoreWeatherInfo {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {}
