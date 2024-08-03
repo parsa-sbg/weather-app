@@ -22,12 +22,13 @@ const WeatherProvider = ({ children }) => {
     }
 
     const mainWeatherInfo = {
+        mainStatus:weatherData?.weather[0].main ,
         cityName: weatherData?.name,
         temp: changeKelvinToCdegree(weatherData?.main.temp),
         date: moment.unix(weatherData?.dt).format('h:mm a - dddd'),
         icon: <img className='MainWeatherInfo__icon' src={`https://openweathermap.org/img/wn/${weatherData?.weather[0].icon}@2x.png`} alt="weather icon" />,
     }
-
+ 
     const moreWheaherInfo = {
         maxTemp: changeKelvinToCdegree(weatherData?.main.temp_max),
         minTemp: changeKelvinToCdegree(weatherData?.main.temp_min),
