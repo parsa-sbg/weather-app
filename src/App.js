@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Container from '@mui/material/Container';
 import Routes from './routes';
-import { useWeather } from './contexts/weatherContext'
+import { useWeather } from './hooks/useWeather';
 import { useEffect } from 'react';
 
 function App() {

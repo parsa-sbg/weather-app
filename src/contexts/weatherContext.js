@@ -1,8 +1,7 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useState } from 'react'
 import moment from 'moment';
 
 
-const useWeather = () => useContext(WeatherContext)
 
 const WeatherContext = createContext(null)
 
@@ -51,4 +50,4 @@ const WeatherProvider = ({ children }) => {
     )
 }
 
-export { useWeather, WeatherProvider }
+export { WeatherProvider , WeatherContext }

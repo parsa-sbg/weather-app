@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Header.css'
 import { NavLink } from 'react-router-dom'
-import { useWeather } from '../../contexts/weatherContext'
+import { useWeather } from '../../hooks/useWeather';
 import { CiSearch } from "react-icons/ci";
 import { FaHome } from "react-icons/fa";
 import { PiGlobeStandBold } from "react-icons/pi";
