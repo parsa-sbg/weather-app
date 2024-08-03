@@ -24,7 +24,7 @@ const WeatherProvider = ({ children }) => {
     const mainWeatherInfo = {
         cityName: weatherData?.name,
         temp: changeKelvinToCdegree(weatherData?.main.temp),
-        date: moment().format('h:mm a - dddd'),
+        date: moment.unix(weatherData?.dt).format('h:mm a - dddd'),
         icon: <img className='MainWeatherInfo__icon' src={`https://openweathermap.org/img/wn/${weatherData?.weather[0].icon}@2x.png`} alt="weather icon" />,
     }
 
