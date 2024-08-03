@@ -6,12 +6,12 @@ import { useWeather } from './contexts/weatherContext'
 import { useEffect } from 'react';
 
 function App() {
-  const {fetchWeather} = useWeather()
+  const { fetchWeather } = useWeather()
 
   useEffect(() => {
     fetchWeather('tehran')
   }, [])
-  
+
   return (
     <div className="App">
       <Container>

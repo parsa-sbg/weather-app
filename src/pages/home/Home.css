@@ -1,4 +1,5 @@
 .home{
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 6.71rem);

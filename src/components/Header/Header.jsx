@@ -5,10 +5,7 @@ import { useWeather } from '../../contexts/weatherContext'
 import { CiSearch } from "react-icons/ci";
 import { FaHome } from "react-icons/fa";
 import { PiGlobeStandBold } from "react-icons/pi";
-
-
-
-
+import Container from '@mui/material/Container';
 
 
 export default function Header({ }) {
@@ -24,26 +21,33 @@ export default function Header({ }) {
 
 
   return (
+
     <header className='header'>
+      <Container>
 
-      <div className='header__left'>
-        <div className='header__links'>
-          <NavLink className='header__link' to={'./'}><FaHome/>home</NavLink>
-          <NavLink className='header__link' to={'./all'}><PiGlobeStandBold/>all cities</NavLink>
+        <div className='header-wrapper'>
+          <div className='header__left'>
+            <div className='header__links'>
+              <NavLink className='header__link' to={'./'}><FaHome />home</NavLink>
+              <NavLink className='header__link' to={'./all'}><PiGlobeStandBold />all cities</NavLink>
+            </div>
+          </div>
+
+          <div className='header__right'>
+            <input
+              className='header__input' type="text"
+              placeholder='search a location...'
+              value={cityname}
+              onChange={e => { setCityName(e.target.value) }} />
+            <a onClick={btnClickHandlere} className='header__right-searchbtn'>
+              <CiSearch className='header__right-searchbtn-icon' size={30} />
+            </a>
+          </div>
+
         </div>
-      </div>
 
-      <div className='header__right'>
-        <input
-          className='header__input' type="text"
-          placeholder='search a location...'
-          value={cityname}
-          onChange={e => { setCityName(e.target.value) }} />
-        <a onClick={btnClickHandlere} className='header__right-searchbtn'>
-          <CiSearch className='header__right-searchbtn-icon' size={30} />
-        </a>
-      </div>
 
+      </Container>
     </header>
   )
 }
