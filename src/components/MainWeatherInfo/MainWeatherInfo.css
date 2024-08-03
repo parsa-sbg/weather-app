@@ -26,7 +26,7 @@
 }
 
 .MainWeatherInfo__icon {
-    font-size: 6rem;
+    margin: -2rem;
 }
 
 @media only screen and (max-width: 800px) {

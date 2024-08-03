@@ -16,7 +16,7 @@ const WeatherProvider = ({ children }) => {
         setIsLoading(true)
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=40846d7c3078163c44131acde6033488`)
         const data = await res.json()
-        
+
         res.status == 200 && setWeatherData(data)
         setIsLoading(false)
     }
@@ -24,7 +24,8 @@ const WeatherProvider = ({ children }) => {
     const mainWeatherInfo = {
         cityName: weatherData?.name,
         temp: changeKelvinToCdegree(weatherData?.main.temp),
-        date: moment().format('h:mm a - dddd')
+        date: moment().format('h:mm a - dddd'),
+        icon: <img className='MainWeatherInfo__icon' src={`https://openweathermap.org/img/wn/${weatherData?.weather[0].icon}@2x.png`} alt="weather icon" />,
     }
 
     const moreWheaherInfo = {
@@ -50,4 +51,4 @@ const WeatherProvider = ({ children }) => {
     )
 }
 
-export { WeatherProvider , WeatherContext }
+export { WeatherProvider, WeatherContext }

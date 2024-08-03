@@ -1,6 +1,5 @@
 import React from 'react'
 import './MainWeatherInfo.css'
-import { FaCloudShowersHeavy } from "react-icons/fa";
 
 
 export default function MainWeatherInfo({mainWeatherInfo}) {
@@ -12,7 +11,7 @@ export default function MainWeatherInfo({mainWeatherInfo}) {
                 <span className='MainWeatherInfo__city-name'>{mainWeatherInfo.cityName}</span>
                 <span className='MainWeatherInfo__date'>{mainWeatherInfo.date}</span>
             </div>
-            <FaCloudShowersHeavy className='MainWeatherInfo__icon'/>
+            {mainWeatherInfo.icon}
         </div>
     )
 }
