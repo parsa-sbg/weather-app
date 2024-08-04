@@ -5,11 +5,7 @@ const useDynamicBackground = () => {
 
     const mainStatus = weatherData.mainWeatherInfo.mainStatus
     const { DayOrNight } = weatherData
-    console.log(DayOrNight);
 
-
-
-    // rain - clear - fog - snow - thunderstorm - clouds  swithc: mainStatus?.toLowerCase()
 
     switch (mainStatus?.toLowerCase()) {
         case 'drizzle':
@@ -34,7 +30,7 @@ const useDynamicBackground = () => {
             return `./images/${DayOrNight}/clouds.jpg`
 
         default:
-            return ``
+            return `./images/${DayOrNight}/rain.jpg`
     }
 }
 export { useDynamicBackground }

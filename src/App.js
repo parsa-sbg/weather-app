@@ -14,12 +14,10 @@ function App() {
   }, [])
 
 
-  const data = useDynamicBackground()
-  // console.log(data);
-
+  const backgrountURL = useDynamicBackground()
 
   return (
-    <div style={{ backgroundImage: `url(${data})` }} className='app-bg'>
+    <div style={{ backgroundImage: `url(${backgrountURL})` }} className='app-bg'>
 
       <div className="App">
         <Container>
