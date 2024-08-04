@@ -28,8 +28,8 @@ export default function Header({ }) {
         <div className='header-wrapper'>
           <div className='header__left'>
             <div className='header__links'>
-              <NavLink className='header__link' to={'./'}><FaHome />home</NavLink>
-              <NavLink className='header__link' to={'./all'}><PiGlobeStandBold />all cities</NavLink>
+              <NavLink className='header__link' to={'./'}><FaHome /></NavLink>
+              <NavLink className='header__link' to={'./all'}><PiGlobeStandBold /></NavLink>
             </div>
           </div>
 

@@ -34,6 +34,12 @@ header {
     text-decoration: none;
     display: flex;
     align-items: center;
+    color: aliceblue;
+    font-size: 4rem;
+}
+
+.header__link.active{
+    color: rgb(40, 83, 40);
 }
 
 /* end header left */
@@ -73,6 +79,7 @@ header {
 .header__right-searchbtn-icon{
     size: 50;
     border-left: 1px solid black;
+    color: black;
 }
 
 
