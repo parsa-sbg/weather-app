@@ -27,9 +27,10 @@
 
 @media only screen and (max-width: 800px) {
     .MoreWeatherInfo-wrapper {
+        position: relative;
         width: 108%;
         margin: 0 -8px;
-        background-color: bisque;
+        backdrop-filter: blur(3px);
         justify-content: center;
         height: 66%;
     }

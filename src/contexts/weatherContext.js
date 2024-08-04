@@ -38,13 +38,15 @@ const WeatherProvider = ({ children }) => {
 
     }
 
+    const DayOrNight = weatherData?.weather[0].icon.slice(2, 3) == 'n' ? 'night' : 'day'
     return (
         <WeatherContext.Provider
             value={{
                 mainWeatherInfo,
                 moreWheaherInfo,
                 fetchWeather,
-                isLoading
+                isLoading,
+                DayOrNight
             }}>
 
             {children}

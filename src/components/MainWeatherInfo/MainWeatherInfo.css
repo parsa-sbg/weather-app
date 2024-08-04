@@ -19,6 +19,7 @@
 .MainWeatherInfo__city-name {
     width: 100%;
     font-size: 6rem;
+    text-wrap: wrap;
 }
 
 .MainWeatherInfo__date {
