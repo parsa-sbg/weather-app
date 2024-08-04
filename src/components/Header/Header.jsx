@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Header.css'
 import { NavLink } from 'react-router-dom'
-import { useWeather } from '../../hooks/useWeather';
-import { CiSearch } from "react-icons/ci";
 import { FaHome } from "react-icons/fa";
 import { PiGlobeStandBold } from "react-icons/pi";
 import Container from '@mui/material/Container';
+import SearchInput from './SearchInput';
 
 
 export default function Header({ }) {
-
-  const [cityname, setCityName] = useState('tehran')
-  const { fetchWeather } = useWeather()
-
-
-  const btnClickHandlere = () => {
-    cityname.trim() && fetchWeather(cityname)
-  }
-
 
 
   return (
@@ -34,14 +24,7 @@ export default function Header({ }) {
           </div>
 
           <div className='header__right'>
-            <input
-              className='header__input' type="text"
-              placeholder='search a location...'
-              value={cityname}
-              onChange={e => { setCityName(e.target.value) }} />
-            <a onClick={btnClickHandlere} className='header__right-searchbtn'>
-              <CiSearch className='header__right-searchbtn-icon' size={30} />
-            </a>
+            <SearchInput />
           </div>
 
         </div>
