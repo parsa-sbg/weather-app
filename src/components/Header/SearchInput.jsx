@@ -11,8 +11,6 @@ export default function SearchInput() {
     const { fetchWeather } = useWeather()
 
     const allCities = citiesNames
-
-    console.log(citiesNames);
     
     useEffect(() => {
         fetchWeather(cityname)
