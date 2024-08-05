@@ -49,6 +49,7 @@ const WeatherProvider = ({ children }) => {
                 date,
                 hours
             }));
+            return result
         }
     }
 
@@ -69,7 +70,9 @@ const WeatherProvider = ({ children }) => {
 
     }
 
-    const weatherForecase = cookForecastData(forecast)
+    const weatherForecast = cookForecastData(forecast)
+    console.log(weatherForecast);
+
 
 
     const DayOrNight = weatherData?.weather[0].icon.slice(2, 3) == 'n' ? 'night' : 'day'
@@ -81,7 +84,7 @@ const WeatherProvider = ({ children }) => {
                 fetchWeather,
                 isLoading,
                 DayOrNight,
-                weatherForecase
+                weatherForecast
             }}>
 
             {children}
