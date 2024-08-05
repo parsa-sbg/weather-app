@@ -2,8 +2,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
-    padding-top: 8.3rem;
+    height: calc(100vh - 8.1rem);
 }
 
 

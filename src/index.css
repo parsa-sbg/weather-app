@@ -8,11 +8,25 @@
 
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
 body {
     font-size: 1.6rem;
     font-family: 'vazir';
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000a4;
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-track{
+    background-color: gray;
 }

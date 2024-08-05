@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 

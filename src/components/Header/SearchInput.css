@@ -1,19 +1,22 @@
-.form{
+.form {
     position: relative;
 }
 
-.input{
+.input {
     border: none;
     outline: none;
     padding: 1rem .5rem;
     font-size: 2rem;
     padding-right: 3.5rem;
-    border-radius: 1.5rem .4rem;
     width: 100%;
+    background-color: transparent;
+    color: #cecdcd;
+    border-left: 2px solid #cecdcd;
+
 }
-.searchbtn{
+
+.searchbtn {
     padding: 0;
-    border: none;
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -22,15 +25,23 @@
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #cecdcd;
+    border-radius: 100%;
+    width: fit-content;
+    height: fit-content;
+    padding: .5rem;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
-.searchbtn-icon{
+.searchbtn-icon {
     size: 50;
-    border-left: 1px solid black;
-    color: black;
+    color: #cecdcd;
 }
 
-.suggestedCities-list{
+.suggestedCities-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,17 +52,20 @@
     top: 110%;
     width: 100%;
 }
-.suggestedCities-item{
+
+.suggestedCities-item {
     width: 80%;
     padding: .4rem 1rem;
     text-align: center;
-    background-color: #fff;
-    color: black;
+    background-color: transparent;
+    background-color: rgb(0, 0, 0);
+    color: #cecdcd;
+    border: 1px solid #cecdcd;
     border-radius: 2rem;
     cursor: pointer;
     transition: all 200ms linear;
 }
 
-.suggestedCities-item:hover{
-    background-color: #cecdcd;
+.suggestedCities-item:hover {
+    background-color: rgba(50, 46, 46, 0.868);
 }

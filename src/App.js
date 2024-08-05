@@ -20,8 +20,8 @@ function App() {
     <div style={{ backgroundImage: `url(${backgrountURL})` }} className='app-bg'>
 
       <div className="App">
+        <Header />
         <Container>
-          <Header />
           <Routes />
         </Container>
       </div>
