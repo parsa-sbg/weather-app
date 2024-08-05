@@ -3,10 +3,10 @@ import './ForecastChart.css'
 import { CartesianGrid, Legend, Line, LineChart, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
 
 
-export default function ForecastChart({ data }) {
+export default function ForecastChart({ data, date }) {
     return (
         <div className="ForecastChart-wrapper">
-            <h2 className='ForecastChart__title'>2024-08-05</h2>
+            <h2 className='ForecastChart__title'>{date}</h2>
             <div className='ForecastChart'>
                 <ResponsiveContainer width='100%' height={200}>
                     <LineChart width={730} height={250} data={data}>

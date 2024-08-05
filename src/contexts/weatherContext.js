@@ -37,8 +37,8 @@ const WeatherProvider = ({ children }) => {
                 acc[date] = [];
             }
             acc[date].push({
-                time: item.dt_txt.split(' ')[1],
-                temp: item.main.temp,
+                time: item.dt_txt.split(' ')[1].slice(0,5),
+                temp: changeKelvinToCdegree(item.main.temp) ,
             });
             return acc;
         }, {});
@@ -71,9 +71,6 @@ const WeatherProvider = ({ children }) => {
     }
 
     const weatherForecast = cookForecastData(forecast)
-    console.log(weatherForecast);
-
-
 
     const DayOrNight = weatherData?.weather[0].icon.slice(2, 3) == 'n' ? 'night' : 'day'
     return (

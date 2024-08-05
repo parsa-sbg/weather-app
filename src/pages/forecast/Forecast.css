@@ -3,6 +3,20 @@
     padding-top: 8.3rem;
 }
 
+.forecast__cityName{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
 .forecast__day{
 
+}
+
+@media only screen and (max-width:500px) {
+    .forecast__cityName{
+        font-size: 3rem;
+
+    }
 }
