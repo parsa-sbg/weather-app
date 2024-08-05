@@ -19,7 +19,7 @@ export default function Header({ }) {
           <div className='header__left'>
             <div className='header__links'>
               <NavLink className='header__link' to={'./'}><FaHome /></NavLink>
-              <NavLink className='header__link' to={'./all'}><PiGlobeStandBold /></NavLink>
+              <NavLink className='header__link' to={'./forecast'}><PiGlobeStandBold /></NavLink>
             </div>
           </div>
 

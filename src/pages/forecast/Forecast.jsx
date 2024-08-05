@@ -1,5 +1,5 @@
 import React from 'react'
-import './AllCities.css'
+import './Forecast.css'
 
 export default function allCities() {
   return (
