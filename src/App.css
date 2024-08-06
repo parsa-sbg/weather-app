@@ -7,4 +7,5 @@
 .App{
     background-color: #00000060;
     color: aliceblue;
+    min-height: 100vh;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Forecast.css'
-import ForecastChart from './ForecastChart'
+import ForecastChart from '../../components/ForecastChart/ForecastChart'
 import { Grid } from '@mui/material'
 import { useWeather } from '../../hooks/useWeather'
 import Loader from '../../components/Loader/Loader'
@@ -10,8 +10,6 @@ import Loader from '../../components/Loader/Loader'
 export default function Forecast() {
 
   const { weatherForecast, isLoading, mainWeatherInfo } = useWeather()
-  console.log(weatherForecast);
-
 
   return (
     <div className='forecast'>

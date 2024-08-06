@@ -5,18 +5,18 @@ import { CiSearch } from "react-icons/ci";
 import {citiesNames} from '../../assests/datas/citiesName' 
 
 export default function SearchInput() {
-    const [cityname, setCityName] = useState('')
+    const [searchedCityname, setsearchedCityName] = useState('')
     const [inputValue, setInputValue] = useState('')
     const [suggestedCities, setSuggestedCities] = useState([])
-    const { fetchWeather } = useWeather()
+    const { setCityName } = useWeather()
 
     const allCities = citiesNames
     
     useEffect(() => {
-        fetchWeather(cityname)
+        searchedCityname && setCityName(searchedCityname)
         setInputValue('')
         setSuggestedCities([])
-    }, [cityname])
+    }, [searchedCityname])
 
     useEffect(() => {
         suggestedCitiesGenerator()
@@ -28,7 +28,7 @@ export default function SearchInput() {
 
     const SubmitHandler = (e) => {
         e.preventDefault()
-        setCityName(inputValue)
+        setsearchedCityName(inputValue)
     }
 
     const suggestedCitiesGenerator = () => {
@@ -42,12 +42,12 @@ export default function SearchInput() {
 
     const suggestedCityClickHandler = (e) => {
 
-        if (cityname == e.target.textContent) {
-            fetchWeather(cityname)
+        if (searchedCityname == e.target.textContent) {
+            setCityName(searchedCityname)
             setInputValue('')
             setSuggestedCities([])
         } else {
-            setCityName(e.target.textContent)
+            setsearchedCityName(e.target.textContent)
         }
     }
 
