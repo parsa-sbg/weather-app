@@ -1,3 +1,7 @@
+a simple weather website using react js, react router and open weathermap api
+live demo : https://myweather.liara.run
+
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
