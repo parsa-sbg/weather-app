@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/weather-app/static/css/main.97900436.css",
+    "main.js": "/weather-app/static/js/main.92e30a82.js",
+    "static/media/Vazir-Bold.woff": "/weather-app/static/media/Vazir-Bold.cf91a7a6bcfa78aad306.woff",
+    "static/media/Vazir-Medium.woff2": "/weather-app/static/media/Vazir-Medium.276befd1faf18a3d9afb.woff2",
+    "static/media/Vazir.woff2": "/weather-app/static/media/Vazir.0236d12799f12ebefd2d.woff2",
+    "index.html": "/weather-app/index.html",
+    "main.97900436.css.map": "/weather-app/static/css/main.97900436.css.map",
+    "main.92e30a82.js.map": "/weather-app/static/js/main.92e30a82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97900436.css",
+    "static/js/main.92e30a82.js"
+  ]
+}
