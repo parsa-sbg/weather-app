@@ -1,5 +1,5 @@
 
-[LIVE DEMO](https://myweather.liara.run)
+[LIVE DEMO](https://parsa-sbg.github.io/weather-app)
 
 a simple weather website using react js, react router and open weathermap api <br/>
 
